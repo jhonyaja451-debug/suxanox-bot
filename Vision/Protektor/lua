@@ -1,1 +1,1 @@
-tvloadstring(game:HttpGet("https://pastefy.app/G51ESnzM/raw"))()
+loadstring(game:HttpGet("https://pastefy.app/G51ESnzM/raw"))()
